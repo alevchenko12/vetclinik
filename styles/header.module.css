@@ -1,0 +1,62 @@
+/* styles/header.module.css */
+
+/* Header styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #4b79a1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Logo styles */
+header img {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 70px;
+    width: 70px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0;
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav li button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav li button:hover {
+    background-color: #0056b3;
+}
