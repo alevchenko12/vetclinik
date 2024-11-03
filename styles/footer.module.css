@@ -1,19 +1,15 @@
-/* styles/footer.module.css */
-
-/* Contact information */
-footer {
+.footer {
     padding: 20px;
     background-color: #4b79a1;
     color: white;
     text-align: center;
 }
 
-address {
+.address {
     margin: 20px 0;
 }
 
-/* Change font to red and bold after 2 seconds on hover */
-address p:hover {
+.address p:hover {
     transition: color 2s, font-weight 2s;
     color: red;
     font-weight: bold;

@@ -1,63 +1,51 @@
-// pages/index.js
-import styles from '../styles/index.module.css'; // Importing styles
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/Header'; 
+import Footer from '../components/Footer'; 
+import styles from '../styles/index.module.css'; 
 
-const Home = () => {
+const IndexPage = () => {
   return (
-    <div>
-      <Header />
-      <main className={styles.main}>
-        <section className={styles.purpose}>
-          <h2>Про VetClinik</h2>
-          <p><b>Наші вихованці - це більше, ніж просто пухнасті друзі, вони родина.</b></p>
-          <p><em>Ми хочемо, щоб у Вашого вихованця було хороше життя...</em></p>
-          <b>Наші основні завдання:</b>
-          <ol type="I">
-            <li>Надання високоякісної ветеринарної допомоги.</li>
-            <li>Запобігання захворювань домашніх тварин.</li>
-            <li>Консультації з питань догляду за тваринами.</li>
-            <li>Організація навчальних програм для власників тварин.</li>
-          </ol>
-          <p>
-            Зосередивши увагу на здоров'я, мережа ветеринарних центрів Animal Clinic використовує сучасний підхід з реальної практики в США по догляду за тваринами, одночасно зводячи до мінімуму страх і стрес при кожному відвідуванні ветеринара.
-          </p>
+    <>
+      <Header /> 
+      <main className={styles.main}> 
+        <section className={styles.purpose}> 
+          <h2>Наші Цілі</h2>
+          <p>Ми прагнемо надавати найкращі ветеринарні послуги для ваших домашніх улюбленців.</p>
         </section>
 
-        <article className={styles.infoBlock}>
-          <h2>Історія нашої клініки</h2>
-          <p>Центр ветеринарної медицини "Animal Clinik" було відкрито 1 квітня 2000 р., коли в Україні тільки-но зароджувалась приватна ветеринарна медицина.</p>
-          <p>За ці роки ми пройшли дуже непростий етап становлення і зуміли розвинутися з невеликої ветеринарної клініки з обмеженими можливостями до повноцінного Центру із замкненим циклом послуг.</p>
-          <p>Ми зосереджені на здоров'ї ваших улюбленців і надаємо високоякісну ветеринарну допомогу.</p>
-        </article>
+        <section className={styles['info-block']}> 
+          <h3>Інформація про нас</h3>
+          <p>Наші лікарі мають великий досвід у догляді за тваринами.</p>
+        </section>
 
-        <table>
-          <caption>Наші послуги</caption>
+        <table className={styles.table}> 
+          <caption className={styles.caption}>Наші Послуги</caption>
           <thead>
             <tr>
-              <th>Послуга</th>
-              <th>Ціна</th>
+              <th className={styles.th}>Послуга</th>
+              <th className={styles.th}>Ціна</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Ветеринарний огляд</td>
-              <td>200 грн.</td>
+              <td>Консультація</td>
+              <td>500 грн</td>
             </tr>
             <tr>
               <td>Вакцинація</td>
-              <td>350 грн.</td>
-            </tr>
-            <tr>
-              <td>Хірургія</td>
-              <td>1500 грн.</td>
-            </tr>
+              <td>300 грн</td>
+            </tr>            
           </tbody>
         </table>
+
+        <address className={styles.address}> 
+          <p>Адреса: вул. Центральна 10, Київ</p>
+          <p>Телефон: (044) 123-45-67</p>
+          <p>Email: info@animalclinik.ua</p>
+        </address>
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default IndexPage;

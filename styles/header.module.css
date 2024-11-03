@@ -1,7 +1,4 @@
-/* styles/header.module.css */
-
-/* Header styles */
-header {
+.header {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,15 +11,14 @@ header {
     justify-content: space-between;
 }
 
-header h1 {
+.header h1 {
     margin: 0;
     font-size: 24px;
     flex-grow: 1;
     text-align: center;
 }
 
-/* Logo styles */
-header img {
+.header img {
     position: absolute;
     top: 5px;
     left: 15px;
@@ -30,25 +26,24 @@ header img {
     width: 70px;
 }
 
-/* Navigation */
-nav ul {
+.nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
 }
 
-nav li {
+.nav li {
     margin: 0;
     padding: 10px;
 }
 
-nav li a {
+.nav li a {
     text-decoration: none;
     color: #000;
 }
 
-nav li button {
+.nav li button {
     background-color: #007bff;
     border: none;
     padding: 5px 10px;
@@ -57,6 +52,19 @@ nav li button {
     transition: background-color 0.3s;
 }
 
-nav li button:hover {
+.nav li button:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
     background-color: #0056b3;
 }

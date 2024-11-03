@@ -1,7 +1,8 @@
 // components/Header.js
-import styles from '../styles/header.module.css'; // Importing styles
+import styles from '../styles/header.module.css'; 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   useEffect(() => {
@@ -50,29 +51,25 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <img src="/img/logo.png" alt="Логотип Animal Clinik" width="150" />
+      <Image src="/images/logo.png" alt="Логотип Animal Clinik" width={150} height={150} />
       <h1>Animal Clinik</h1>
       <nav>
         <ul>
           <li>
-            <Link href="/services">
-              <a>Послуги</a>
+            <Link href="/services">Послуги</Link>
+          </li>
+          <li>
+            <Link href="/contact">Зворотній зв’язок</Link>
+          </li>
+          <li>
+            <Link href="#login">
+              <button className={styles.btn}>Перейти у власний кабінет</button>
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a>Зворотній зв’язок</a>
-            </Link>
-          </li>
-          <li>
-            <button className={styles.btn}>
-              <a href="#login">Перейти у власний кабінет</a>
-            </button>
-          </li>
-          <li>
-            <button className={styles.btn}>
-              <a href="#register">Зареєструватись</a>
-            </button>
+            <Link href="/register">
+              <button className={styles.btn}>Зареєструватись</button>
+            </Link>                             
           </li>
         </ul>
       </nav>

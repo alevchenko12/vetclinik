@@ -1,56 +1,50 @@
-/* styles/index.module.css */
-
-/* General body styles */
-body {
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #f0f8ff, #e6e6fa);
 }
 
-/* Main content styles */
-main {
-    padding-top: 80px; /* Ensure content is below fixed header */
+.main {
+    padding-top: 80px; 
 }
 
-/* Purpose section */
 .purpose {
-    margin: 5px; /* Smaller external margins */
-    padding: 15px; /* Larger internal padding */
+    margin: 5px; 
+    padding: 15px; 
     border: 1px solid #ccc;
 }
 
-/* Info block */
-.info-block {
+.infoBlock { 
     margin: 10px;
     padding: 30px;
     border: 1px solid #ccc;
     transition: transform 0.3s;
 }
 
-/* Move the block 5px to the left and down on hover */
-.info-block:hover {
+.infoBlock:hover {
     transform: translate(-5px, 5px);
 }
 
-/* Table styles */
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table, th, td {
+.table,
+.th,
+.td {
     border: 1px solid #ccc;
     padding: 10px;
 }
 
-caption {
+.caption {
     caption-side: top;
     font-weight: bold;
     font-size: 18px;
 }
 
-th {
+.th {
     background-color: #f8f8f8;
 }

@@ -1,0 +1,126 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa); 
+}
+
+.main {
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main h2 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+.backButton {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Georgia', serif; 
+}
+
+.serviceList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.serviceItem {
+    border: 2px solid darkblue; 
+    border-top: 2px solid darkblue; /* Solid top border */
+    border-right: 2px dotted darkblue;
+    border-bottom: 2px dotted darkblue;
+    border-left: 2px dotted darkblue;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for each service item */
+    transition: transform 0.3s ease;
+    text-align: center; 
+}
+
+.serviceItem img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: filter 0.3s ease; 
+}
+
+.serviceItem img:hover {
+    filter: invert(1); /* Negative effect on hover */
+}
+
+/* Price styling: Bold, italic, and larger */
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordionHeader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.accordionButton {
+    background-color: #4b79a1; /* Same as header */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.accordionButton:hover {
+    background-color: #3b5e78; /* Darker shade on hover */
+}
+
+.accordionContent {
+    padding: 10px;
+    background-color: #e6e6fa; /* Light background for content */
+    border: 1px solid darkblue; /* Border for the content */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Table styles */
+.serviceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.serviceTable th,
+.serviceTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.serviceTable th {
+    background-color: #4b79a1; /* Header background */
+    color: white;
+}
+
+.serviceImage {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
